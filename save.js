@@ -1,4 +1,4 @@
-async function saveData(name,email, phone) {
+async function saveData(fullname,email, tel) {
 
   const SUPABASE_URL = "https://ygvnvfdfecvjgppieuce.supabase.co";
   const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inlndm52ZmRmZWN2amdwcGlldWNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg5MTUwODcsImV4cCI6MjA5NDQ5MTA4N30.fOZZfLTYKa1q7e7NdLeJMO6833-m384Qqg-berrfp5s";
@@ -13,9 +13,9 @@ async function saveData(name,email, phone) {
         "Authorization": `Bearer ${SUPABASE_KEY}`
       },
       body: JSON.stringify({
-        fullname: name,
+        fullname: fullname,
 		email:email,
-        tel: phone
+        tel: tel
       })
     }
   );

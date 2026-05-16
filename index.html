@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>บันทึกข้อมูล</title>
+</head>
+<body>
+
+  <input type="text" id="name" placeholder="ชื่อ">
+  <input type="text" id="phone" placeholder="เบอร์มือถือ">
+
+  <button onclick="submitData()">บันทึก</button>
+
+  <script src="save.js"></script>
+
+  <script>
+    function submitData() {
+      const name = document.getElementById("name").value;
+      const phone = document.getElementById("phone").value;
+
+      saveData(name, phone);
+    }
+  </script>
+
+</body>
+</html>

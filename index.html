@@ -5,9 +5,9 @@
 </head>
 <body>
 
-  <input type="text" id="name" placeholder="ชื่อ">
+  <input type="text" id="fullname" placeholder="ชื่อ">
   <input type="text" id="email" placeholder="อีเมล">
-  <input type="text" id="phone" placeholder="เบอร์มือถือ">
+  <input type="text" id="tel" placeholder="เบอร์มือถือ">
 
   <button onclick="submitData()">บันทึก</button>
 
@@ -15,11 +15,11 @@
 
   <script>
     function submitData() {
-      const name = document.getElementById("name").value;
+      const fullname = document.getElementById("fullname").value;
 	  const email = document.getElementById("email").value;
-      const phone = document.getElementById("phone").value;
+      const tel = document.getElementById("tel").value;
 
-      saveData(name,email, phone);
+      saveData(fullname,email, tel);
     }
   </script>
 
